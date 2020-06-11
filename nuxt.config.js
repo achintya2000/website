@@ -30,7 +30,11 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '@/plugins/vue-typed'
+    '@/plugins/vue-typed',
+    {
+      src: '@/plugins/vue-particles',
+      ssr: false
+    }
   ],
   /*
   ** Nuxt.js dev-modules
