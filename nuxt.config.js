@@ -33,7 +33,7 @@ export default {
     '@/plugins/vue-typed',
     {
       src: '@/plugins/vue-particles',
-      ssr: false
+      mode: 'client'
     }
   ],
   /*
