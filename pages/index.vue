@@ -1,7 +1,9 @@
 <template>
   <v-layout column justify-center align-center>
     <v-flex xs12 sm8 md6>
-      <vue-particles color="#dedede"></vue-particles>
+      <client-only placeholder="Loading...">
+        <vue-particles color="#dedede"></vue-particles>
+      </client-only>
       <div class="text-center">
         <logo />
         <vuetify-logo />

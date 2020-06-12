@@ -1,5 +1,5 @@
 import Vue from 'vue'
-const VueParticles = () => import('vue-particles')
+import VueParticles from 'vue-particles'
 
 export default () => {
   Vue.use(VueParticles)
