@@ -2,12 +2,22 @@
   <v-layout column justify-center align-center>
     <v-flex xs12 sm8 md6>
       <client-only placeholder="Loading...">
-        <vue-particles color="#dedede"></vue-particles>
+        <vue-particles></vue-particles>
       </client-only>
-      <div class="text-center">
+      <!-- <div class="text-center">
         <logo />
         <vuetify-logo />
-      </div>
+      </div>-->
+      <v-card outlined>
+        <h1>Hi! I'm Achintya</h1>
+        <vue-typed-js :strings="['engineer', 'entrepreneur', 'investor']" :loop="true">
+          <h3>
+            I'm an
+            <span class="typing"></span>
+          </h3>
+        </vue-typed-js>
+      </v-card>
+
       <v-card>
         <v-card-title class="headline">Welcome to the Vuetify + Nuxt.js template</v-card-title>
         <v-card-text>
@@ -67,9 +77,25 @@ import Logo from "~/components/Logo.vue";
 import VuetifyLogo from "~/components/VuetifyLogo.vue";
 
 export default {
+  layout: "default",
   components: {
     Logo,
     VuetifyLogo
   }
 };
 </script>
+
+<style>
+#particles-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+#overlay {
+  position: relative;
+}
+</style>
