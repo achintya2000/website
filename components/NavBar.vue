@@ -1,6 +1,6 @@
 <template>
   <nav>
-    <v-app-bar color="transparent" flat hide-on-scroll app>
+    <v-app-bar color="#131313" flat app>
       <v-app-bar-nav-icon class="hidden-md-and-up" @click="drawer = !drawer"></v-app-bar-nav-icon>
 
       <v-spacer class="hidden-md-and-up"></v-spacer>
