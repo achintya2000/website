@@ -5,15 +5,17 @@
 
       <v-spacer class="hidden-md-and-up"></v-spacer>
 
-      <v-toolbar-title>
-        <span class="font-weight-light text-decoration-underline">Achintya</span>
-        <span>Kumar</span>
-      </v-toolbar-title>
+      <nuxt-link to="/" style="text-decoration: none; color: inherit;">
+        <v-toolbar-title>
+          <span class="font-weight-light text-decoration-underline">Achintya</span>
+          <span>Kumar</span>
+        </v-toolbar-title>
+      </nuxt-link>
 
       <v-spacer></v-spacer>
 
-      <v-btn class="hidden-sm-and-down" text v-for="name in names" :key="name">
-        <span>{{ name }}</span>
+      <v-btn class="hidden-sm-and-down" text v-for="name in names" :key="name.title">
+        <nuxt-link :to="name.to" style="text-decoration: none; color: inherit;">{{ name.title }}</nuxt-link>
       </v-btn>
 
       <v-spacer class="hidden-sm-and-down"></v-spacer>
@@ -41,9 +43,9 @@
       <v-divider></v-divider>
 
       <v-list dense nav>
-        <v-list-item v-for="name in names" :key="name" link>
+        <v-list-item v-for="name in names" :key="name.title" link :to="name.to">
           <v-list-item-content>
-            <v-list-item-title>{{ name }}</v-list-item-title>
+            <v-list-item-title>{{ name.title }}</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
       </v-list>
@@ -76,7 +78,12 @@ export default {
   data() {
     return {
       drawer: false,
-      names: ["Experiences", "Projects", "Resume", "Thoughts"],
+      names: [
+        { title: "Experiences", to: "/experiences" },
+        { title: "Projects", to: "/projects" },
+        { title: "Resume", to: "/resume" },
+        { title: "Thoughts", to: "/thoughts" }
+      ],
       contactpoints: [
         {
           title: "Github",

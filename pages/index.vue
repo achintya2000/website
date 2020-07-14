@@ -3,23 +3,18 @@
 <template>
   <v-layout column justify-center align-center>
     <v-flex xs12 sm8 md6>
-      <client-only placeholder="Loading...">
+      <client-only>
         <vue-particles></vue-particles>
       </client-only>
-      <!-- <div class="text-center">
-        <logo />
-        <vuetify-logo />
-      </div>-->
-      <v-card color="transparent" flat>
-        <h1 class="glitch" data-text="Hi! I'm Achintya">Hi! I'm Achintya</h1>
 
-        <vue-typed-js :strings="['engineer', 'entrepreneur', 'investor']" :loop="true">
-          <h3>
-            I'm an
-            <span class="typing"></span>
-          </h3>
-        </vue-typed-js>
-      </v-card>
+      <h1 class="glitch" data-text="Hi!">Hi!</h1>
+      <h1 class="glitch" data-text="I'm Achintya">I'm Achintya</h1>
+      <vue-typed-js :strings="['engineer', 'entrepreneur', 'investor']" :loop="true">
+        <h2>
+          I'm an
+          <span class="typing"></span>
+        </h2>
+      </vue-typed-js>
     </v-flex>
   </v-layout>
 </template>
