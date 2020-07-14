@@ -1,7 +1,9 @@
 <template>
   <nav>
-    <v-app-bar color="transparent" fixed app>
+    <v-app-bar color="transparent" flat hide-on-scroll app>
       <v-app-bar-nav-icon class="hidden-md-and-up" @click="drawer = !drawer"></v-app-bar-nav-icon>
+
+      <v-spacer class="hidden-md-and-up"></v-spacer>
 
       <v-toolbar-title>
         <span class="font-weight-light text-decoration-underline">Achintya</span>
@@ -14,7 +16,7 @@
         <span>{{ name }}</span>
       </v-btn>
 
-      <v-spacer></v-spacer>
+      <v-spacer class="hidden-sm-and-down"></v-spacer>
 
       <v-btn
         class="hidden-sm-and-down"
@@ -25,7 +27,6 @@
       >
         <v-icon>{{ contact.icon }}</v-icon>
       </v-btn>
-
       <!--<v-btn outlined>Contact</v-btn> -->
     </v-app-bar>
 
