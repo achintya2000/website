@@ -1,11 +1,47 @@
 <template>
-  <div>
-    <h1>Hi</h1>
-  </div>
+  <v-layout column align-center>
+    <v-flex xs12 sm8 md6>
+      <h1>Experiences</h1>
+      <v-card class="mx-auto" max-width="800">
+        <v-img
+          src="https://www.lockheedmartin.com/content/dam/lockheed-martin/eo/photo/suppliers/cybersecurity-masthead.jpg.pc-adaptive.full.medium.jpeg"
+          height="200px"
+        ></v-img>
+
+        <v-card-title>Cybersecurity and Automation Intern</v-card-title>
+
+        <v-card-subtitle>NetApp</v-card-subtitle>
+
+        <v-card-actions>
+          <v-btn text>Share</v-btn>
+
+          <v-btn color="blue" text>Explore</v-btn>
+
+          <v-spacer></v-spacer>
+
+          <v-btn icon @click="show = !show">
+            <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
+          </v-btn>
+        </v-card-actions>
+
+        <v-expand-transition>
+          <div v-show="show">
+            <v-divider></v-divider>
+
+            <v-card-text>I'm a thing. But, like most politicians, he promised more than he could deliver. You won't have time for sleeping, soldier, not with all the bed making you'll be doing. Then we'll go with that data file! Hey, you add a one and two zeros to that or we walk! You're going to do his laundry? I've got to find a way to escape.</v-card-text>
+          </div>
+        </v-expand-transition>
+      </v-card>
+    </v-flex>
+  </v-layout>
 </template>
 
 <script>
-export default {};
+export default {
+  data: () => ({
+    show: false
+  })
+};
 </script>
 
 <style>

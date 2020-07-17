@@ -14,11 +14,10 @@
       <v-card flat color="transparent">
         <vue-typed-js
           style="justify-content: center;"
-          :strings="['engineer', 'entrepreneur', 'investor']"
+          :strings="['Engineer', 'Entrepreneur', 'Thinker']"
           :loop="true"
         >
-          <h2>
-            I'm an
+          <h2 class="font-italic">
             <span class="typing"></span>
           </h2>
         </vue-typed-js>
