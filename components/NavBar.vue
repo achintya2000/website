@@ -49,6 +49,11 @@
             <v-list-item-title>{{ name.title }}</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
+        <v-list-item link href="/Achintya_Resume.pdf" target="_blank">
+          <v-list-item-content>
+            <v-list-item-title>Resume</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
       </v-list>
 
       <v-divider></v-divider>
