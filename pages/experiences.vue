@@ -8,7 +8,7 @@
           height="200px"
         ></v-img>
 
-        <v-card-title>Cybersecurity and Automation Intern</v-card-title>
+        <v-card-title class="fix">Cybersecurity and Automation Intern</v-card-title>
 
         <v-card-subtitle>NetApp</v-card-subtitle>
 
@@ -45,4 +45,10 @@ export default {
 </script>
 
 <style>
+.fix {
+  overflow-wrap: anywhere;
+  word-wrap: break-word;
+  word-break: normal;
+  hyphens: auto;
+}
 </style>

@@ -17,6 +17,7 @@
       <v-btn class="hidden-sm-and-down" text v-for="name in names" :key="name.title">
         <nuxt-link :to="name.to" style="text-decoration: none; color: inherit;">{{ name.title }}</nuxt-link>
       </v-btn>
+      <v-btn class="hidden-sm-and-down" text href="/Achintya_Resume.pdf" target="_blank">Resume</v-btn>
 
       <v-spacer class="hidden-sm-and-down"></v-spacer>
 
@@ -81,7 +82,6 @@ export default {
       names: [
         { title: "Experiences", to: "/experiences" },
         { title: "Projects", to: "/projects" },
-        { title: "Resume", to: "/resume" },
         { title: "Thoughts", to: "/thoughts" }
       ],
       contactpoints: [
