@@ -3,15 +3,17 @@
     <v-flex xs12 sm8 md6>
       <h1>Experiences</h1>
 
-      <v-card class="mx-auto" max-width="800">
-        <v-img
-          src="https://www.lockheedmartin.com/content/dam/lockheed-martin/eo/photo/suppliers/cybersecurity-masthead.jpg.pc-adaptive.full.medium.jpeg"
-          height="200px"
-        ></v-img>
+      <v-card
+        v-for="experience in Experiences"
+        :key="experience.title"
+        class="mx-auto"
+        max-width="800"
+      >
+        <v-img :src="experience.image" height="200px"></v-img>
 
-        <v-card-title>Cybersecurity and Automation Intern</v-card-title>
+        <v-card-title>{{experience.title}}</v-card-title>
 
-        <v-card-subtitle>NetApp</v-card-subtitle>
+        <v-card-subtitle>{{experience.company}}</v-card-subtitle>
 
         <v-card-actions>
           <v-btn text>Share</v-btn>
@@ -20,16 +22,16 @@
 
           <v-spacer></v-spacer>
 
-          <v-btn icon @click="show = !show">
-            <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
+          <v-btn icon @click="experience.show = !experience.show">
+            <v-icon>{{ experience.show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
           </v-btn>
         </v-card-actions>
 
         <v-expand-transition>
-          <div v-show="show">
+          <div v-show="experience.show">
             <v-divider></v-divider>
 
-            <v-card-text>I'm a thing. But, like most politicians, he promised more than he could deliver. You won't have time for sleeping, soldier, not with all the bed making you'll be doing. Then we'll go with that data file! Hey, you add a one and two zeros to that or we walk! You're going to do his laundry? I've got to find a way to escape.</v-card-text>
+            <v-card-text>{{experience.description}}</v-card-text>
           </div>
         </v-expand-transition>
       </v-card>
@@ -40,7 +42,6 @@
 <script>
 export default {
   data: () => ({
-    show: false,
     Experiences: [
       {
         title: "Cybersecurity and Automation Intern",
@@ -49,6 +50,7 @@ export default {
           "https://www.lockheedmartin.com/content/dam/lockheed-martin/eo/photo/suppliers/cybersecurity-masthead.jpg.pc-adaptive.full.medium.jpeg",
         description:
           "I'm a thing. But, like most politicians, he promised more than he could deliver. You won't have time for sleeping, soldier, not with all the bed making you'll be doing. Then we'll go with that data file! Hey, you add a one and two zeros to that or we walk! You're going to do his laundry? I've got to find a way to escape.",
+        show: false,
       },
     ],
   }),

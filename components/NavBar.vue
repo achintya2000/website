@@ -87,27 +87,27 @@ export default {
       names: [
         { title: "Experiences", to: "/experiences" },
         { title: "Projects", to: "/projects" },
-        { title: "Thoughts", to: "/thoughts" }
+        { title: "Thoughts", to: "/thoughts" },
       ],
       contactpoints: [
         {
           title: "Github",
           icon: "mdi-github",
-          link: "https://www.github.com/achintya2000"
+          link: "https://www.github.com/achintya2000",
         },
         {
           title: "LinkedIn",
           icon: "mdi-linkedin",
-          link: "https://www.linkedin.com/in/achintyakumar"
+          link: "https://www.linkedin.com/in/achintyakumar",
         },
         {
           title: "Email",
           icon: "mdi-gmail",
-          link: "mailto:achintyasi@gmail.com"
-        }
-      ]
+          link: "mailto:achintyasi@gmail.com",
+        },
+      ],
     };
-  }
+  },
 };
 </script>
 
