@@ -2,13 +2,14 @@
   <v-layout column align-center>
     <v-flex xs12 sm8 md6>
       <h1>Experiences</h1>
+
       <v-card class="mx-auto" max-width="800">
         <v-img
           src="https://www.lockheedmartin.com/content/dam/lockheed-martin/eo/photo/suppliers/cybersecurity-masthead.jpg.pc-adaptive.full.medium.jpeg"
           height="200px"
         ></v-img>
 
-        <v-card-title class="fix">Cybersecurity and Automation Intern</v-card-title>
+        <v-card-title>Cybersecurity and Automation Intern</v-card-title>
 
         <v-card-subtitle>NetApp</v-card-subtitle>
 
@@ -39,16 +40,24 @@
 <script>
 export default {
   data: () => ({
-    show: false
-  })
+    show: false,
+    Experiences: [
+      {
+        title: "Cybersecurity and Automation Intern",
+        company: "NetApp",
+        image:
+          "https://www.lockheedmartin.com/content/dam/lockheed-martin/eo/photo/suppliers/cybersecurity-masthead.jpg.pc-adaptive.full.medium.jpeg",
+        description:
+          "I'm a thing. But, like most politicians, he promised more than he could deliver. You won't have time for sleeping, soldier, not with all the bed making you'll be doing. Then we'll go with that data file! Hey, you add a one and two zeros to that or we walk! You're going to do his laundry? I've got to find a way to escape.",
+      },
+    ],
+  }),
 };
 </script>
 
 <style>
-.fix {
-  overflow-wrap: anywhere;
-  word-wrap: break-word;
-  word-break: normal;
-  hyphens: auto;
+.v-card__text,
+.v-card__title {
+  word-break: normal; /* maybe !important  */
 }
 </style>

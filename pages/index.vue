@@ -8,12 +8,12 @@
       </client-only>
 
       <v-card flat color="transparent">
-        <h1 class="glitch text-center" data-text="Hi!">Hi!</h1>
-        <h1 class="glitch" data-text="I'm Achintya">I'm Achintya</h1>
+        <h1 class="glitch text-center" style="font-size: 4vw;" data-text="Hi!">Hi!</h1>
+        <h1 class="glitch" style="font-size: 4vw;" data-text="I'm Achintya">I'm Achintya</h1>
       </v-card>
       <v-card flat color="transparent">
         <vue-typed-js
-          style="justify-content: center;"
+          style="justify-content: center; font-size: 1.5vw;"
           :strings="['Engineer', 'Entrepreneur', 'Thinker']"
           :loop="true"
         >
