@@ -9,7 +9,7 @@
         class="mx-auto my-4"
         max-width="800"
       >
-        <v-img :src="project.image" height="200px"></v-img>
+        <v-img :src="project.image"></v-img>
 
         <v-card-title>{{ project.title }}</v-card-title>
 
@@ -45,14 +45,22 @@ export default {
   data: () => ({
     Projects: [
       {
-        title: "Undergrad Researcher",
-        group:
-          "Intelligent Interactive Internet of Things Lab - Duke University",
-        image: require(""),
+        title: "InstaJam",
+        group: "Hacking for Defense - I&E 590",
+        image: require("@/static/project1.jpg"),
         description:
-          "Automated functionality to reduce email analysis time which improved efficiency by 20% and saved at least 10 hours weekly. Developed and engineered 3 automation solutions to streamline the workflow of security analysts. Challenge was to increase efficiency as email analysis was consuming the entire work week. Integrated various backend services through APIs and authored technical documentation",
+          "Developing an Android application with the research obtained for the DoD that will integrate with their existing hardware to give instant feedback to close air support soldiers on whether they’re being jammed or not while trying to communicate with pilots. Collaborated with the 818th Operations Support Squadron to find a solution for 'Securing Communications between JTACs and Pilots.' Interviewed 6-10 Department of Defense officials a week to conduct extensive market research on the selected problem",
         show: false,
-        link: "https://www.github.com/achintya2000",
+        link: "https://github.com/sgupta229/RFAnalyzer",
+      },
+      {
+        title: "ECE Calculator App",
+        group: "Mobile App Development - ECE 564",
+        image: "",
+        description:
+          "Created an iOS calculator app targeted to ECE students that solves differential equations, sys of equations, and matrix operations",
+        show: false,
+        link: "https://github.com/achintya2000/ECE564_Project",
       },
     ],
   }),
