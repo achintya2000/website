@@ -11,9 +11,9 @@
       >
         <v-img :src="experience.image" height="200px"></v-img>
 
-        <v-card-title>{{experience.title}}</v-card-title>
+        <v-card-title>{{ experience.title }}</v-card-title>
 
-        <v-card-subtitle>{{experience.company}}</v-card-subtitle>
+        <v-card-subtitle>{{ experience.company }}</v-card-subtitle>
 
         <v-card-actions>
           <v-btn text>Share</v-btn>
@@ -23,7 +23,9 @@
           <v-spacer></v-spacer>
 
           <v-btn icon @click="experience.show = !experience.show">
-            <v-icon>{{ experience.show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
+            <v-icon>{{
+              experience.show ? "mdi-chevron-up" : "mdi-chevron-down"
+            }}</v-icon>
           </v-btn>
         </v-card-actions>
 
@@ -31,7 +33,7 @@
           <div v-show="experience.show">
             <v-divider></v-divider>
 
-            <v-card-text>{{experience.description}}</v-card-text>
+            <v-card-text>{{ experience.description }}</v-card-text>
           </div>
         </v-expand-transition>
       </v-card>
@@ -71,9 +73,17 @@ export default {
       {
         title: "Tech Specialist",
         company: "Duke University",
-        image: "",
+        image: require("@/static/experience4.jpg"),
         description:
           "Advise students with technology solutions for their needs. Provide after sales support on computers and peripherals.",
+        show: false,
+      },
+      {
+        title: "Software Lead",
+        company: "FIRST Robotics Team 2059 - The Hitchhikers",
+        image: require("@/static/experience5.jpg"),
+        description:
+          "Successfully programmed our robot in Java and reached the World Championships in Houston. Collaborated to create a code library for our team's future use. Used power tools to precisely manufacture our robot's mechanical parts. Presented to judges about our team to win the 'Innovation in Control' and 'Excellence in Engineering' awards. Held a leadership position for 1+ years.",
         show: false,
       },
     ],
