@@ -6,7 +6,7 @@
       <v-card
         v-for="experience in Experiences"
         :key="experience.title"
-        class="mx-auto"
+        class="mx-auto my-4"
         max-width="800"
       >
         <v-img :src="experience.image" height="200px"></v-img>
@@ -44,12 +44,36 @@ export default {
   data: () => ({
     Experiences: [
       {
+        title: "Undergrad Researcher",
+        company:
+          "Intelligent Interactive Internet of Things Lab - Duke University",
+        image: require("@/static/experience3.png"),
+        description:
+          "Automated functionality to reduce email analysis time which improved efficiency by 20% and saved at least 10 hours weekly. Developed and engineered 3 automation solutions to streamline the workflow of security analysts. Challenge was to increase efficiency as email analysis was consuming the entire work week. Integrated various backend services through APIs and authored technical documentation",
+        show: false,
+      },
+      {
         title: "Cybersecurity and Automation Intern",
         company: "NetApp",
-        image:
-          "https://www.lockheedmartin.com/content/dam/lockheed-martin/eo/photo/suppliers/cybersecurity-masthead.jpg.pc-adaptive.full.medium.jpeg",
+        image: require("@/static/experience1.jpeg"),
         description:
-          "I'm a thing. But, like most politicians, he promised more than he could deliver. You won't have time for sleeping, soldier, not with all the bed making you'll be doing. Then we'll go with that data file! Hey, you add a one and two zeros to that or we walk! You're going to do his laundry? I've got to find a way to escape.",
+          "Automated functionality to reduce email analysis time which improved efficiency by 20% and saved at least 10 hours weekly. Developed and engineered 3 automation solutions to streamline the workflow of security analysts. Challenge was to increase efficiency as email analysis was consuming the entire work week. Integrated various backend services through APIs and authored technical documentation",
+        show: false,
+      },
+      {
+        title: "Web Development Intern",
+        company: "NetApp",
+        image: require("@/static/experience2.jpg"),
+        description:
+          "Spearheaded the development of new front end technologies resulting in improved workflow experiences. Partnered with a global team to overhaul the design of the internal case tracking tool. Improved case tracking efficiency by 70% for Support Engineers using a customized framework. Showcased my project to company executives and employees and received several accolades",
+        show: false,
+      },
+      {
+        title: "Tech Specialist",
+        company: "Duke University",
+        image: "",
+        description:
+          "Advise students with technology solutions for their needs. Provide after sales support on computers and peripherals.",
         show: false,
       },
     ],
