@@ -1,11 +1,11 @@
 <template>
   <v-app light>
     <NavBar />
-    <v-content>
+    <v-main>
       <v-container class="fill-height" fluid>
         <nuxt></nuxt>
       </v-container>
-    </v-content>
+    </v-main>
     <!--<v-navigation-dr  awer
       v-model="drawer"
       :mini-variant="miniVariant"
@@ -96,7 +96,7 @@ import NavBar from "@/components/NavBar";
 
 export default {
   components: {
-    NavBar
+    NavBar,
   },
   data() {
     return {
@@ -107,19 +107,19 @@ export default {
         {
           icon: "mdi-apps",
           title: "Welcome",
-          to: "/"
+          to: "/",
         },
         {
           icon: "mdi-chart-bubble",
           title: "Inspire",
-          to: "/inspire"
-        }
+          to: "/inspire",
+        },
       ],
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: "Vuetify.js"
+      title: "Vuetify.js",
     };
-  }
+  },
 };
 </script>
