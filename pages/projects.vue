@@ -45,6 +45,15 @@ export default {
   data: () => ({
     Projects: [
       {
+        title: "UR5 Robot - Write Initials",
+        group: "Intro to Robotics - ECE495",
+        image: require("@/static/project2.png"),
+        description:
+          "The problem for this midterm assignment was to have a UR5’s end-effector draw out the letters of our initials. In my case those letters were a, s, and k. My general approach was to set the robot to an initial pose and then plan a Cartesian path by specifying waypoints for the end effector to go to. In this way we can trace out the path of the letters.",
+        show: false,
+        link: "https://gitlab.oit.duke.edu/ask60/ask60_rosintro/-/blob/master/scripts/midterm.py",
+      },
+      {
         title: "InstaJam",
         group: "Hacking for Defense - I&E 590",
         image: require("@/static/project1.jpg"),
