@@ -33,7 +33,7 @@
       <!--<v-btn outlined>Contact</v-btn> -->
     </v-app-bar>
 
-    <v-navigation-drawer v-model="drawer" app class="hidden-md-and-up">
+    <v-navigation-drawer v-model="drawer" absolute temporary app class="hidden-md-and-up">
       <v-list-item>
         <v-list-item-content>
           <v-list-item-title class="title">Application</v-list-item-title>
