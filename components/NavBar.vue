@@ -36,8 +36,8 @@
     <v-navigation-drawer v-model="drawer" absolute temporary app class="hidden-md-and-up">
       <v-list-item>
         <v-list-item-content>
-          <v-list-item-title class="title">Application</v-list-item-title>
-          <v-list-item-subtitle>subtext</v-list-item-subtitle>
+          <v-list-item-title class="title">Achintya</v-list-item-title>
+          <v-list-item-subtitle>Kumar</v-list-item-subtitle>
         </v-list-item-content>
       </v-list-item>
 
